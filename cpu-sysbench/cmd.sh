@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ae
+
 PRIMES=50000
 CPU_INFO=${SONM_CPU_COUNT:-1}
 
