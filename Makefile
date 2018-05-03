@@ -2,7 +2,7 @@ sysbench_image="sonm/cpu-sysbench:latest"
 dumb_image="sonm/dumb-bench:latest"
 net_image="sonm/net-bandwidth:latest"
 
-all: sysbench dumb
+all: sysbench dumb net
 
 dumb: build/dumb push/dumb
 sysbench: build/sysbench push/sysbench
@@ -16,10 +16,10 @@ push/sysbench:
 
 
 build/dumb:
-	docker build -t ${sysbench_image} ./dumb-bench/
+	docker build -t ${dumb_image} ./dumb-bench/
 
 push/dumb:
-	docker push ${sysbench_image}
+	docker push ${dumb_image}
 
 build/net:
 	docker build -t ${net_image} ./net-bandwidth/
