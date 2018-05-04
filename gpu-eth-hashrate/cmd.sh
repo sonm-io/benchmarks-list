@@ -11,7 +11,7 @@ NUMBERS=$(cat claymoreoutput.log | grep -a 'Total Speed' | grep -av '0.000 Mh/s'
 if [[ -z "$NUMBERS" ]]; then
     MH=0
 else
-    MH=$(echo $NUMBERS | cut -d ' ' -f 5  | numaverage -i)
+    MH=$(cat claymoreoutput.log | grep -a 'Total Speed' | grep -av '0.000 Mh/s' | cut -d ' ' -f 5  | numaverage -i)
 fi
 
 echo '{"results":{"gpu-eth-hashrate":{"result":'$MH'}}}'
