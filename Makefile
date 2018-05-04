@@ -2,7 +2,8 @@ sysbench_image="sonm/cpu-sysbench:latest"
 dumb_image="sonm/dumb-bench:latest"
 net_image="sonm/net-bandwidth:latest"
 gpu_eth_image="sonm/gpu-eth-hashrate:latest"
-gpu_cash_image="sonm/gpu-cash-hashrate"
+gpu_cash_image="sonm/gpu-cash-hashrate:latest"
+gpu_redshift="sonm/gpu-redshift:latest"
 
 all: sysbench dumb net
 
@@ -11,6 +12,7 @@ sysbench: build/sysbench push/sysbench
 net: build/net push/net
 gpu-eth: build/gpu-eth push/gpu-eth
 gpu-cash: build/gpu-cash push/gpu-cash
+redshift: build/redshift push/redshift
 
 build/sysbench:
 	docker build -t ${sysbench_image} ./cpu-sysbench/
@@ -42,3 +44,9 @@ build/gpu-cash:
 
 push/gpu-cash:
 	docker push ${gpu_cash_image}
+
+build/redshift:
+	docker build -t ${gpu_redshift} ./gpu-redshift/
+
+push/redshift:
+	docker push ${gpu_redshift}
