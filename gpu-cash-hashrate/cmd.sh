@@ -6,10 +6,10 @@ export GPU_MAX_ALLOC_PERCENT=100
 
 SOLS=0
 case "$SONM_GPU_TYPE" in
-    "nvidia" )
+    "NVIDIA" )
         SOLS=$(./nvidia.sh)
     ;;
-    "radeon" )
+    "RADEON" )
         SOLS=$(./radeon.sh)
     ;;
     * )
