@@ -5,7 +5,7 @@ gpu_eth_image="sonm/gpu-eth-hashrate:latest"
 gpu_cash_image="sonm/gpu-cash-hashrate:latest"
 gpu_redshift="sonm/gpu-redshift:latest"
 
-all: sysbench dumb net
+all: sysbench net gpu-eth gpu-cash redshift
 
 dumb: build/dumb push/dumb
 sysbench: build/sysbench push/sysbench
