@@ -5,8 +5,8 @@ set -ae
 PRIMES=50000
 CPU_INFO=${SONM_CPU_COUNT:-1}
 
-RESULT_SINGLE=0
-RESULT_MULTI=0
+RESULT_SINGLE="0"
+RESULT_MULTI="0"
 
 # we always need result for single core
 RESULT_SINGLE=$(sysbench --threads=1 cpu --cpu-max-prime=${PRIMES} run | grep "total number of events" | grep -oE "[0-9]+" | head -1)
