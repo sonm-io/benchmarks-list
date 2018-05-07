@@ -17,5 +17,5 @@ case "$SONM_GPU_TYPE" in
     exit 1
 esac
 
-echo "{\"results\":{\"gpu-cash-hashrate\":{\"result\":$SOLS}}}"
+echo '{"results":{"gpu-cash-hashrate":{"result":'${SOLS}'}}}'
 exit 0
