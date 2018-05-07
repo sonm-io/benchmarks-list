@@ -13,7 +13,8 @@ RUN apt-get update && \
     mkdir /home/zcashamd && cd /home/zcashamd && \
 	curl -L -o amd.tar.gz https://github.com/nanopool/ClaymoreZECMiner/releases/download/v${ZCASH_AMD_VERSION}/Claymore.s.ZCash.AMD.GPU.Miner.v${ZCASH_AMD_VERSION}.-.LINUX.tar.gz && \
 	tar xzvf amd.tar.gz && \
-    rm amd.tar.gz
+    rm amd.tar.gz && \
+    mkdir -p /lib64/nvidia/
 
 ADD ./*.sh /
 CMD ["/cmd.sh"]

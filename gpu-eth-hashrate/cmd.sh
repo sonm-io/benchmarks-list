@@ -3,6 +3,12 @@
 GPU_FORCE_64BIT_PTR=1
 GPU_MAX_ALLOC_PERCENT=100
 
+# monkey-patching ᕕ( ಠ_ಠ )ᕗ
+if [[ "$SONM_GPU_TYPE" -eq "NVIDIA" ]]; then
+    ln -s /usr/local/nvidia/lib64/libnvidia-ml.so.1 /lib64/nvidia/libnvidia-ml.so
+    export LD_LIBRARY_PATH=/usr/local/nvidia/lib64/:/lib64/nvidia/
+fi
+
 /home/claymore/ethdcrminer64 -mode 1 -benchmark 1 > claymoreoutput.log &
 sleep 80
 
