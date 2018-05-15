@@ -1,7 +1,7 @@
 #!/bin/bash
 
-/home/zcashamd/zecminer64 -benchmark 1 > /zecmineroutput.log 2>&1 &
-sleep ${BENCH_TIME_SEC}
+timeout --kill-after=5 --signal=SIGTERM ${BENCH_TIME_SEC} \
+    /home/zcashamd/zecminer64 -benchmark 1 > /zecmineroutput.log 2>&1
 
 NUMBERS=$(cat /zecmineroutput.log | grep -oE "ZEC - Total Speed: [0-9]+" | grep -oE "[0-9]+")
 

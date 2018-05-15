@@ -2,6 +2,7 @@
 
 GPU_FORCE_64BIT_PTR=1
 GPU_MAX_ALLOC_PERCENT=100
+BENCH_TIME_SEC=80
 
 # monkey-patching ᕕ( ಠ_ಠ )ᕗ
 if [[ "$SONM_GPU_TYPE" -eq "NVIDIA" ]]; then
@@ -9,8 +10,8 @@ if [[ "$SONM_GPU_TYPE" -eq "NVIDIA" ]]; then
     export LD_LIBRARY_PATH=/usr/local/nvidia/lib64/:/lib64/nvidia/
 fi
 
-/home/claymore/ethdcrminer64 -mode 1 -benchmark 1 > claymoreoutput.log &
-sleep 80
+timeout --kill-after=5 --signal=SIGTERM ${BENCH_TIME_SEC} \
+    /home/claymore/ethdcrminer64 -mode 1 -benchmark 1 > claymoreoutput.log
 
 MH=0
 NUMBERS=$(cat claymoreoutput.log | grep -a 'Total Speed' | grep -av '0.000 Mh/s')

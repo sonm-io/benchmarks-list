@@ -6,8 +6,10 @@ if [[ "$SONM_GPU_TYPE" -eq "NVIDIA" ]]; then
     export LD_LIBRARY_PATH=/usr/local/nvidia/lib64/:/lib64/nvidia/
 fi
 
-/home/zcashcuda/miner --server zec-eu1.nanopool.org --user t1NgEd9Wo6fqMt3cuVR5fTYyo2Gv3JT5RMB.sonm-worker/szwtdy@gmail.com --pass z --port 6666 --log 2 --logfile zcashminer.log > /dev/null 2>&1 &
-sleep ${BENCH_TIME_SEC}
+timeout --kill-after=5 --signal=SIGTERM ${BENCH_TIME_SEC} \
+    /home/zcashcuda/miner --server zec-eu1.nanopool.org \
+    --user t1NgEd9Wo6fqMt3cuVR5fTYyo2Gv3JT5RMB.sonm-worker/szwtdy@gmail.com \
+    --pass z --port 6666 --log 2 --logfile zcashminer.log > /dev/null 2>&1
 
 SOLS=0
 NUMBERS=$(cat zcashminer.log | grep "Total speed:" | grep -oE "[0-9]+" | grep -v 0)
