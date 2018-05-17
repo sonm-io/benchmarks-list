@@ -27,7 +27,7 @@ push/dumb:
 	docker push ${dumb_image}
 
 build/net:
-	docker build -t ${net_image} ./net-bandwidth/
+	docker build -t ${net_image} ./net-speedtest/
 
 push/net:
 	docker push ${net_image}
@@ -37,7 +37,6 @@ build/gpu-eth:
 
 push/gpu-eth:
 	docker push ${gpu_eth_image}
-
 
 build/gpu-cash:
 	docker build -t ${gpu_cash_image} ./gpu-cash-hashrate/
