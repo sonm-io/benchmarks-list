@@ -54,7 +54,7 @@
   },
   "gpu-cash-hashrate": {
     "id": 10,
-    "image": "sonm/gpu-cash-hashrate@sha256:33eae20b2da88d8df9e70e9f8fbacd5885b366a9eda831834f0198b39a55647f",
+    "image": "sonm/gpu-cash-hashrate@sha256:1b4cd1c8a06fcb15762794e50711c5aeab9779d566c75f57d381cee5cde7dfb1",
     "type": 2,
     "splittingAlgorithm": 1
   },
