@@ -11,15 +11,17 @@ if [[ "$SONM_GPU_TYPE" -eq "NVIDIA" ]]; then
 fi
 
 timeout --kill-after=5 --signal=SIGTERM ${BENCH_TIME_SEC} \
-    /home/claymore/ethdcrminer64 -mode 1 -benchmark 1 > claymoreoutput.log
+    /home/claymore/ethdcrminer64 -mode 1 -benchmark 1 > claymoreoutput.log 2>&1
 
 MH=0
 NUMBERS=$(cat claymoreoutput.log | grep -a 'Total Speed' | grep -av '0.000 Mh/s')
 if [[ -z "$NUMBERS" ]]; then
     MH=0
 else
-    MH=$(cat claymoreoutput.log | grep -a 'Total Speed' | grep -av '0.000 Mh/s' | cut -d ' ' -f 5  | numaverage -i)
+    MH=$(cat claymoreoutput.log | grep -a 'Total Speed' | grep -av '0.000 Mh/s' | cut -d ' ' -f 5 | numaverage | numfmt --format='%.3f')
 fi
 
-echo '{"results":{"gpu-eth-hashrate":{"result":'${MH}'}}}'
+HASHES=$(echo "$MH * 1000 * 1000" | bc | numaverage -i)
+
+echo '{"results":{"gpu-eth-hashrate":{"result":'${HASHES}'}}}'
 exit 0

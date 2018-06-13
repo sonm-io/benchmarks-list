@@ -1,0 +1,73 @@
+
+����������������������������������������������������������������ͻ
+�     Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v10.0      �
+����������������������������������������������������������������ͼ
+
+No AMD cards in the list.
+Be careful with overclocking, use default clocks for first tests
+Press "s" for current statistics, "0".."9" to turn on/off cards, "r" to reload pools, "e" or "d" to select current pool
+CUDA initializing...
+
+NVIDIA Cards available: 1
+CUDA Driver Version/Runtime Version: 9.1/8.0
+GPU #0: GeForce GTX 1080 Ti, 11176 MB available, 28 compute units, capability: 6.1
+
+Total cards: 1
+NVIDIA NVML library not found, temperature monitoring for NVIDIA GPUs disabled.
+
+
+BENCHMARK MODE!
+
+Setting DAG epoch #136...
+Setting DAG epoch #136 for GPU0
+Create GPU buffer for GPU0
+ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 0.000 Mh/s
+ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 0.000 Mh/s
+GPU0 DAG creation time - 5216 ms
+Setting DAG epoch #136 for GPU0 done
+ETH - Total Speed: 32.451 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.451 Mh/s
+ETH - Total Speed: 32.456 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.456 Mh/s
+ETH - Total Speed: 32.454 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.454 Mh/s
+ETH - Total Speed: 32.452 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.452 Mh/s
+ETH - Total Speed: 32.454 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.454 Mh/s
+ETH - Total Speed: 32.457 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.457 Mh/s
+ETH - Total Speed: 32.459 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.459 Mh/s
+ETH - Total Speed: 32.456 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.456 Mh/s
+ETH - Total Speed: 32.463 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.463 Mh/s
+ETH - Total Speed: 32.457 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.457 Mh/s
+ETH - Total Speed: 32.442 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.442 Mh/s
+ETH - Total Speed: 32.459 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.459 Mh/s
+ETH - Total Speed: 32.453 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.453 Mh/s
+ETH - Total Speed: 32.451 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.451 Mh/s
+ETH - Total Speed: 32.459 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.459 Mh/s
+ETH - Total Speed: 32.462 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.462 Mh/s
+ETH - Total Speed: 32.458 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.458 Mh/s
+ETH - Total Speed: 32.456 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+ETH: GPU0 32.456 Mh/s
+ETH - Total Speed: 32.458 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:01
+ETH: GPU0 32.458 Mh/s
+ETH - Total Speed: 32.457 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:01
+ETH: GPU0 32.457 Mh/s
+ETH - Total Speed: 32.458 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:01
+ETH: GPU0 32.458 Mh/s
+ETH - Total Speed: 32.457 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:01
+ETH: GPU0 32.457 Mh/s

@@ -48,7 +48,7 @@
   },
   "gpu-eth-hashrate": {
     "id": 9,
-    "image": "sonm/gpu-eth-hashrate@sha256:fd3ffe1bcf0e7d3d0889adb26186f6909f5fef0fa987bfa6c062f14999761352",
+    "image": "sonm/gpu-eth-hashrate@sha256:71ca369ca67b136adcb52df18ce5cb027a1b3e25d63b47aac35c566ec102921e",
     "type": 2,
     "splittingAlgorithm": 1
   },
