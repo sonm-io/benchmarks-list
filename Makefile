@@ -4,8 +4,9 @@ net_image="sonm/net-bandwidth:latest"
 gpu_eth_image="sonm/gpu-eth-hashrate:latest"
 gpu_cash_image="sonm/gpu-cash-hashrate:latest"
 gpu_redshift="sonm/gpu-redshift:latest"
+gpu_monero="sonm/gpu-monero-hashrate:latest"
 
-all: sysbench net gpu-eth gpu-cash redshift
+all: sysbench net gpu-eth gpu-cash redshift monero
 
 dumb: build/dumb push/dumb
 sysbench: build/sysbench push/sysbench
@@ -13,6 +14,7 @@ net: build/net push/net
 gpu-eth: build/gpu-eth push/gpu-eth
 gpu-cash: build/gpu-cash push/gpu-cash
 redshift: build/redshift push/redshift
+monero: build/monero push/monero
 
 build/sysbench:
 	docker build -t ${sysbench_image} ./cpu-sysbench/
@@ -49,3 +51,9 @@ build/redshift:
 
 push/redshift:
 	docker push ${gpu_redshift}
+
+build/monero:
+	docker build -t ${gpu_monero} ./gpu-monero-hashrate/
+
+push/monero:
+	docker push ${gpu_monero}
