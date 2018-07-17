@@ -13,8 +13,7 @@ case "$SONM_GPU_TYPE" in
         SOLS=$(./radeon.sh)
     ;;
     * )
-    echo "unknown GPU type"
-    exit 1
+    SOLS=0
 esac
 
 echo '{"results":{"gpu-cash-hashrate":{"result":'${SOLS}'}}}'
