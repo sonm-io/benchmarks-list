@@ -60,7 +60,7 @@
   },
   "gpu-redshift": {
     "id": 11,
-    "image": "sonm/gpu-redshift@sha256:d2b42c0aea94440a01ed90dc71a675868b1dbaf0db012061842571e4983175cc",
+    "image": "sonm/gpu-redshift@sha256:bfc1cf25e4d4c39ad126709b6df28ac9aac2ec8caa95289ff5b80905f372d562",
     "type": 2,
     "splittingAlgorithm": 1
   }
