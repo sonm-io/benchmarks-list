@@ -1,0 +1,67 @@
+{
+  "cpu-sysbench-multi": {
+    "id": 0,
+    "image": "sonm/dumb-bench@sha256:25af9e3753d245e6865896b42270a0095c84e390f5056606f2e6a31326eb6e0c",
+    "type": 1,
+    "splittingAlgorithm": 1
+  },
+  "cpu-sysbench-single": {
+    "id": 1,
+    "image": "sonm/dumb-bench@sha256:25af9e3753d245e6865896b42270a0095c84e390f5056606f2e6a31326eb6e0c",
+    "type": 1
+  },
+  "cpu-cores": {
+    "id": 2,
+    "type": 1
+  },
+  "ram-size": {
+    "id": 3,
+    "type": 3,
+    "splittingAlgorithm": 1
+  },
+  "storage-size": {
+    "id": 4,
+    "type": 4,
+    "splittingAlgorithm": 1
+  },
+  "net-download": {
+    "id": 5,
+    "image": "sonm/dumb-bench@sha256:25af9e3753d245e6865896b42270a0095c84e390f5056606f2e6a31326eb6e0c",
+    "type": 5,
+    "splittingAlgorithm": 1
+  },
+  "net-upload": {
+    "id": 6,
+    "image": "sonm/dumb-bench@sha256:25af9e3753d245e6865896b42270a0095c84e390f5056606f2e6a31326eb6e0c",
+    "type": 6,
+    "splittingAlgorithm": 1
+  },
+  "gpu-count": {
+    "id": 7,
+    "type": 2,
+    "splittingAlgorithm": 1
+  },
+  "gpu-mem": {
+    "id": 8,
+    "type": 2,
+    "splittingAlgorithm": 2
+  },
+  "gpu-eth-hashrate": {
+    "id": 9,
+    "image": "sonm/dumb-bench@sha256:25af9e3753d245e6865896b42270a0095c84e390f5056606f2e6a31326eb6e0c",
+    "type": 2,
+    "splittingAlgorithm": 1
+  },
+  "gpu-cash-hashrate": {
+    "id": 10,
+    "image": "sonm/dumb-bench@sha256:25af9e3753d245e6865896b42270a0095c84e390f5056606f2e6a31326eb6e0c",
+    "type": 2,
+    "splittingAlgorithm": 1
+  },
+  "gpu-redshift": {
+    "id": 11,
+    "image": "sonm/dumb-bench@sha256:25af9e3753d245e6865896b42270a0095c84e390f5056606f2e6a31326eb6e0c",
+    "type": 2,
+    "splittingAlgorithm": 1
+  }
+}
