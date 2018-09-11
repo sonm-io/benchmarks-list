@@ -1,3 +1,4 @@
+cpu_cryptonight="sonm/cpu-cryptonight:latest"
 sysbench_image="sonm/cpu-sysbench:latest"
 dumb_image="sonm/dumb-bench:latest"
 net_image="sonm/net-bandwidth:latest"
@@ -9,6 +10,7 @@ all: sysbench net gpu-eth gpu-cash redshift
 
 dumb: build/dumb push/dumb
 sysbench: build/sysbench push/sysbench
+cpu-cryptonight: build/cpu-cryptonight push/cpu-cryptonight
 net: build/net push/net
 gpu-eth: build/gpu-eth push/gpu-eth
 gpu-cash: build/gpu-cash push/gpu-cash
@@ -49,3 +51,9 @@ build/redshift:
 
 push/redshift:
 	docker push ${gpu_redshift}
+
+build/cpu-cryptonight:
+	docker build -t ${cpu_cryptonight} ./cpu-cryptonight/
+
+push/cpu-cryptonight:
+	docker push ${cpu_cryptonight}
