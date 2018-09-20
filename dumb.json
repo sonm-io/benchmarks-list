@@ -63,5 +63,11 @@
     "image": "sonm/dumb-bench@sha256:25af9e3753d245e6865896b42270a0095c84e390f5056606f2e6a31326eb6e0c",
     "type": 2,
     "splittingAlgorithm": 1
+  },
+  "cpu-cryptonight": {
+    "id": 12,
+    "image": "sonm/dumb-bench@sha256:26cfea58ed2547e97117c6d8ae577077d2a0fae3608f01ff35c75d8f4698f52e",
+    "type": 2,
+    "splittingAlgorithm": 1
   }
 }

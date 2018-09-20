@@ -63,5 +63,11 @@
     "image": "sonm/gpu-redshift@sha256:bfc1cf25e4d4c39ad126709b6df28ac9aac2ec8caa95289ff5b80905f372d562",
     "type": 2,
     "splittingAlgorithm": 1
+  },
+  "cpu-cryptonight": {
+    "id": 12,
+    "image": "sonm/cpu-cryptonight@sha256:13729fca8a4f60f8ced6001ea41dc2609ef7219b0a1a713ce2fab5b222e2b314",
+    "type": 1,
+    "splittingAlgorithm": 1
   }
 }
