@@ -26,13 +26,13 @@
   },
   "net-download": {
     "id": 5,
-    "image": "sonm/dumb-bench@sha256:25af9e3753d245e6865896b42270a0095c84e390f5056606f2e6a31326eb6e0c",
+    "image": "sonm/net-bandwidth@sha256:e51c367c5ad56c9ea1dbe1497b4acc7d0839be0832d8b77986b931eedc766fc2",
     "type": 5,
     "splittingAlgorithm": 1
   },
   "net-upload": {
     "id": 6,
-    "image": "sonm/dumb-bench@sha256:25af9e3753d245e6865896b42270a0095c84e390f5056606f2e6a31326eb6e0c",
+    "image": "sonm/net-bandwidth@sha256:e51c367c5ad56c9ea1dbe1497b4acc7d0839be0832d8b77986b931eedc766fc2",
     "type": 6,
     "splittingAlgorithm": 1
   },
