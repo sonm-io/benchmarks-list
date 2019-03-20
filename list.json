@@ -69,5 +69,15 @@
     "image": "sonm/cpu-cryptonight@sha256:c0cbff06d21fcb7ab156945c9b347216bf4c7336efcb892dbb9be0e41146897c",
     "type": 1,
     "splittingAlgorithm": 1
+  },
+  "gpu-nvidia": {
+    "id": 13,
+    "type": 2,
+    "splittingAlgorithm": 2
+  },
+  "gpu-radeon": {
+    "id": 14,
+    "type": 2,
+    "splittingAlgorithm": 2
   }
 }

@@ -69,5 +69,15 @@
     "image": "sonm/dumb-bench@sha256:26cfea58ed2547e97117c6d8ae577077d2a0fae3608f01ff35c75d8f4698f52e",
     "type": 2,
     "splittingAlgorithm": 1
+  },
+  "gpu-nvidia": {
+    "id": 13,
+    "type": 2,
+    "splittingAlgorithm": 2
+  },
+  "gpu-radeon": {
+    "id": 14,
+    "type": 2,
+    "splittingAlgorithm": 2
   }
 }
