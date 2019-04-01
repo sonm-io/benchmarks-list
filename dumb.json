@@ -79,5 +79,11 @@
     "id": 14,
     "type": 2,
     "splittingAlgorithm": 2
+  },
+  "gpu-cuckaroo29": {
+    "id": 15,
+    "image": "sonm/dumb-bench@sha256:25af9e3753d245e6865896b42270a0095c84e390f5056606f2e6a31326eb6e0c",
+    "type": 2,
+    "splittingAlgorithm": 1
   }
 }
