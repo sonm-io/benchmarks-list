@@ -1,6 +1,7 @@
-FROM alpine:latest
+FROM python:alpine
 
-RUN apk update && apk add iperf
+RUN apk update && apk add jq
 
-ADD run.sh /run.sh
+ADD ./run.sh ./test.py /
+
 ENTRYPOINT "/run.sh"
