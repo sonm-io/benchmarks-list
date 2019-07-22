@@ -11,7 +11,7 @@ timeout --foreground --kill-after=5 --signal=SIGTERM 90 \
 
 HASHES=0
 # cat xmr-cpu.log | grep 'speed 10s/60s/15m' | awk '{print $5}' | numaverage -i
-NUMBERS=$(cat miner.log | grep 'speed 10s/60s/15m' | awk '{print $5}')
+NUMBERS=$(cat miner.log | grep 'speed 10s/60s/15m' | awk '{print $5}' | grep -v "n/a")
 if [[ ! -z "$NUMBERS" ]]; then
     HASHES=$(cat miner.log | grep 'speed 10s/60s/15m' | awk '{print $5}' | numaverage -i)
 fi

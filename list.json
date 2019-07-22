@@ -66,7 +66,7 @@
   },
   "cpu-cryptonight": {
     "id": 12,
-    "image": "sonm/cpu-cryptonight@sha256:c0cbff06d21fcb7ab156945c9b347216bf4c7336efcb892dbb9be0e41146897c",
+    "image": "sonm/cpu-cryptonight@sha256:a1fbb158858a5da9486bf38cc2c8e36e20988278950dda631a73e348264934ad",
     "type": 1,
     "splittingAlgorithm": 1
   },
