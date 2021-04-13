@@ -26,13 +26,13 @@
   },
   "net-download": {
     "id": 5,
-    "image": "sonm/net-bandwidth@sha256:2b1569dd1ecb2dd588e448df8762e8310d1f9c6ea539a3404fc2a934bb195fe3",
+    "image": "sonm/net-bandwidth@sha256:9c8ac3f4905f0989191b9eedb73b8eaf398facb35a1a4575e1fbeac38a57770a",
     "type": 5,
     "splittingAlgorithm": 1
   },
   "net-upload": {
     "id": 6,
-    "image": "sonm/net-bandwidth@sha256:2b1569dd1ecb2dd588e448df8762e8310d1f9c6ea539a3404fc2a934bb195fe3",
+    "image": "sonm/net-bandwidth@sha256:9c8ac3f4905f0989191b9eedb73b8eaf398facb35a1a4575e1fbeac38a57770a",
     "type": 6,
     "splittingAlgorithm": 1
   },

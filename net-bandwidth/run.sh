@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 UPLOAD=0
 DOWNLOAD=0
@@ -6,8 +6,8 @@ DOWNLOAD=0
 TMP_DOWN=0
 TMP_UP=0
 
-for i in $(/usr/local/bin/python /test.py --list | head -4 | grep -v speedtest | cut -d ')' -f 1); do
-    /usr/local/bin/python /test.py --json --bytes --server $i > data.json 2>&1
+for i in $(/usr/local/bin/python /speedtest.py --list | head -4 | grep -v speedtest | cut -d ')' -f 1); do
+    /usr/local/bin/python /speedtest.py --json --bytes --server $i > data.json 2>&1
     ERR=$?
     if [[ $ERR == 0 ]]; then
 	TMP_DOWN=$(cat /data.json | jq '.download' | cut -d '.' -f 1)

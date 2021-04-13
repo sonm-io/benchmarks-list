@@ -1,7 +1,7 @@
-FROM python:alpine
+FROM python:3.7-slim-stretch
 
-RUN apk update && apk add jq
+RUN apt update && apt install jq -y
 
-ADD ./run.sh ./test.py /
+ADD ./run.sh ./speedtest.py /
 
 ENTRYPOINT "/run.sh"
